@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n = window.prompt("Digite um numero: ");
+        // document.write(`1 x ${n} =  ${(1 * n)}<br>`)
+        // document.write(`1 x ${n} =  ${(2 * n)}<br>`)
+        // document.write(`1 x ${n} =  ${(3 * n)}<br>`)
+        // document.write(`1 x ${n} =  ${(4 * n)}<br>`)
+        // document.write(`1 x ${n} =  ${(15 * n)}<br>`) 
+        
+        let indice = 1;
+
+        while(indice <= 10){
+            indice ++
+            if(indice === 5){
+                continue
+            }
+            document.write(`${n} x ${indice} =  ${(indice * n)}<br>`) 
+        }
+        document.write("saiu do loop while <br>")
+        
+        indice = 0;
+        do{
+            if(indice > 10 ){
+                window.alert("Indice maior que 10")
+                break
+            }
+            document.write(`${n} x ${indice} =  ${(indice * n)}<br>`) 
+            indice ++
+        } while(indice <=10)
+
+        document.write("saiu do loop do while <br>")
+        
+        for(let i = 0; i <= 10; i++){
+            if(i === 5){
+                continue
+            }
+            document.write(`${n} x ${i} = ${(i * n)} <br>`)
+        }
+        document.write("Saiu do loop For")
+    </script>
+</body>
+</html>
